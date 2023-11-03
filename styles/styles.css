@@ -37,14 +37,16 @@ body{
 }
 .informationHeader{
     font-weight: 900;
+    text-align: center;
+    padding: 60px;
 }
 /* rounded borders */
 #roundedBorder {
     border-radius: 25px;
-    border: 2px solid #3882F6;
+    border: 4px solid #3882F6;
     padding: 20px;
     width: 200px;
-    height: 250px;
+    height: 200px;
 }
 button {
     border-radius: 10px;
@@ -77,13 +79,13 @@ button {
   }
 
 /* first section */
-.container {
+.containerFirstSection {
     display: flex;
     width:450px;
     height:300px;
     margin-left: 200px;
     margin-right: 200px;
-}
+ }
   .leftSide{
     flex:1 0 auto;
     margin:auto;
@@ -108,9 +110,11 @@ button {
   .navBar{
     display: block;
   }
-  .navBar ul{
+  ul{
     list-style: none;
     padding: 0;
+  }
+  .navBar ul{
     margin: 10px 0px 100px 100px;
     display: flex;
     justify-content: center;
@@ -131,4 +135,24 @@ button {
   .header{
     padding-left: 100px;
     padding-bottom: 100px;
+  }
+
+  /* second section */
+  .containerSecondSection {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+ .additionalContainerSecondSection{
+    display: flex;
+    padding-left: 250px;
+    padding-top: 10px;
+    gap: 50px;
+  }
+  #textBelowRoundedBorder{
+    width: 248px;
+    height: 200px;
+    color: #6c747c;
+    font-size: 20px;
+    text-align: center;
   }
