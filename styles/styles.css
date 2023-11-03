@@ -145,7 +145,7 @@ button {
   }
  .additionalContainerSecondSection{
     display: flex;
-    padding-left: 250px;
+    padding-left: 375px;
     padding-top: 10px;
     gap: 50px;
   }
