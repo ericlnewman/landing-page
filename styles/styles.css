@@ -1,5 +1,6 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 .header, .footer{
     color: #f9faf8;
@@ -15,6 +16,10 @@ body{
 }
 .headerLogo {
     font-size: 24px;
+    width: 550px;
+    text-align: center;
+    padding: 10px;
+    float: left;
 }
 .signup, button{
     background-color: #3882F6;
@@ -28,17 +33,102 @@ body{
     background-color: #E5E7EB;
     font-weight: lighter;
     font-style: italic;
+    font-size: 36px;
 }
-.information{
+.informationHeader{
     font-weight: 900;
 }
-
+/* rounded borders */
+#roundedBorder {
+    border-radius: 25px;
+    border: 2px solid #3882F6;
+    padding: 20px;
+    width: 200px;
+    height: 250px;
+}
+button {
+    border-radius: 10px;
+    padding: 20px;
+    vertical-align: middle;
+    font-weight: 600;
+    font-size: 18px;
+}
+.upperButton{
+    border: 2px solid #3882F6;
+    line-height: 5px;
+    margin-top: 5px;
+    width: 160px;
+    height: 25px;
+}
+.lowerButton{
+    border: 2px solid #E5E7EB;
+    width: 135px;
+    height: 25px;
+}
 /* flexbox */
 
 .flex-container{
     display: flex;
     flex-flow: column wrap;
 }
-.container{
-    flex:1;
+/* > * means all children of flex-container, equivalent to a child container */
+.flex-container > * {
+    flex: 1;
+  }
+
+/* first section */
+.container {
+    display: flex;
+    width:450px;
+    height:300px;
+    margin-left: 200px;
+    margin-right: 200px;
 }
+  .leftSide{
+    flex:1 0 auto;
+    margin:auto;
+    width:450px;
+    height:300px;
+    padding: 10px;
+  }
+  .rightSide{
+    flex:1 0 auto;
+    margin:auto;
+    background-color: #6c747c;
+    width:660px;
+    height:250px;
+    margin-left: 70px;
+    text-align: center;
+    padding-top: 0px;
+    
+  }
+  .rightSide p{
+    padding-top: 95px;
+  }
+  .navBar{
+    display: block;
+  }
+  .navBar ul{
+    list-style: none;
+    padding: 0;
+    margin: 10px 0px 100px 100px;
+    display: flex;
+    justify-content: center;
+  }
+  .navBar li{
+    row-gap: 10px;
+    padding: 15px;
+    flex: 0 0 auto;
+  }
+  .navBar li a{
+    text-decoration: none;
+    color:#f9faf8;
+  }
+  .navBar li a:hover{
+    color:#3882F6;
+  }
+  
+  .header{
+    padding-left: 100px;
+    padding-bottom: 100px;
+  }
