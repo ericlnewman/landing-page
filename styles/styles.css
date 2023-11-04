@@ -203,3 +203,10 @@ button {
     font-size: 24px;
     font-weight: 800;
   }
+  /* fifth section */
+  .footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 100px;
+  }
